@@ -7,8 +7,8 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  width: 20%;
-  border-right: 1px solid #e85454;
+  width: 25%;
+  border-right: 1px solid #CC33FF;
   background-color: #F0F3F4;
   align-items: stretch;
   position: fixed;
@@ -30,9 +30,6 @@
 
 .search {
 	position: absolute;
-	z-index: 101;
-	top: 0;
-	left: 0;
 	width: 100%;
 	height: 100%;
 	pointer-events: none;
@@ -74,7 +71,7 @@
 	display: block;
 	width: 100%;
 	pointer-events: auto;
-	color: #e85454;
+	color: #CC33FF;
   background-color: transparent;
   border: 0;
   border-bottom: 4px solid;
@@ -83,21 +80,6 @@
 
 .search__input:focus{
   outline: none;
-}
-
-.btn--search {
-	font-size: 60px;
-	position: static;
-	right: 0;
-	bottom: 8px;
-	pointer-events: none;
-	color: #d17c78;
-  border-bottom: 2px solid yellow;
-
-}
-
-.search--open .btn--search {
-	pointer-events: auto;
 }
 
 /************************/
@@ -115,6 +97,8 @@
 
 .search--open {
 	pointer-events: auto;
+  opacity: 0.8;
+  background-image:url(http://www.wallpapersshock.com/uploads/large/hd-music-wallpapers/free-3d-music-equalizer-wallpapers-hd-download.jpg);
 }
 
 .search__form {
@@ -134,8 +118,8 @@
   display:flex;
   justify-content: flex-end;
   align-self: flex-end;
-  color: #e85454;
-  background-color: #FBFCFC;
+  color: #CC33FF;
+  background-color: transparent;
   border: none;
   outline: none;
   cursor: pointer;
@@ -158,13 +142,9 @@
 	transition-delay: 0.1s;
 }
 
-.btn-search{
-  pointer-events: none;
-}
-
 .container{
   position: absolute;
   right: 0;
   bottom: 60px;
-  color: #e85454;
+  color: #CC33FF;
 }
