@@ -85,13 +85,7 @@
                       const {name, preview_url, id, album} = track;
                       const imageUrl = album.images[1].url;
 
-                      // ^^^^ simpler version of the below set of lines
-                      // const name = track.name
-                      // const preview_url = track.preview_url
-                      // const id = track.id
-                      // const album = track.album
-
-                      // add the generate HTML contents to the search results div
+                      
                       const div = document.createElement('div');
                       div.classList.add('ui', 'card', 'dimmable');
                       div.innerHTML = getCardMarkup(name, preview_url, id, album, imageUrl, false);
